@@ -1,0 +1,208 @@
+/* Fonts */
+.supermercado-one-regular {
+  font-family: "Supermercado One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  font-family: "Supermercado One";
+  color: #39125d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel Decorative";
+  color: #9700df;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: 22px;
+
+  margin: 0px;
+  padding: 0px;
+
+  text-align: left;
+}
+
+a {
+  color: #9700df;
+
+  font-size: 18px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+
+  background-color: #0e051c;
+}
+
+.BaseContainer {
+  width: 75vw;
+}
+
+.Header,
+.Achievements,
+.Projects,
+.Contact,
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 0px;
+}
+
+.Achievements,
+.Projects {
+  gap: 10px;
+}
+
+.LogoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainIcon {
+  width: 128px;
+}
+
+.MainLogo {
+  width: 512px;
+}
+
+.AboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.AboutMeContainer > div {
+  display: flex;
+}
+
+.AboutMeProfile {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: fit-content;
+}
+
+.ProfilePicture {
+  width: 128px;
+  border-radius: 50%;
+}
+
+.Name {
+  font-size: medium;
+  text-align: center;
+
+  margin: 5px 0px 0px 0px;
+}
+
+.AboutMeDescription {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.AchievementsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.AchievementsContainer > * {
+  width: 50%;
+}
+
+.ProjectsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.ProjectsContainer > * {
+  width: 50%;
+}
+
+.ProjectCover {
+  float: left;
+  border-radius: 10%;
+
+  height: 200px;
+  width: 300px;
+
+  object-fit: cover;
+
+  margin-right: 20px;
+}
+
+.ContactContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 700px) {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+
+  .BaseContainer {
+    width: 90vw;
+  }
+
+  .MainIcon,
+  .ProfilePicture {
+    width: 25%;
+  }
+
+  .MainLogo {
+    width: 100%;
+  }
+
+  .AchievementsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .AchievementsContainer > * {
+    width: 100%;
+  }
+
+  .ProjectCover {
+    margin: 10px 0px;
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .ContactContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+}
